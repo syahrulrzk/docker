@@ -4,24 +4,24 @@
 ### 1. Melihat Images.
 <pre>$ docker images</code></pre>
 
-<p>2. Download Images.</p>
-<pre class="wp-block-code"><code class="">$ docker pull debian (latest)
+### 2. Download Images.
+<pre>$ docker pull debian (latest)
 $ docker pull debian:9.8 (certain version)</code></pre>
 
-<p>3. Melihat Docker Container yang sedang running.</p>
+### 3. Melihat Docker Container yang sedang running.
 <pre class="wp-block-code"><code class="">$ docker cotainer ls</code></pre>
 
-<p>4. Melihat semua list Docker Container.</p>
-<pre class="wp-block-code"><code class="">$ docker container ls -a</code></pre>
+### 4. Melihat semua list Docker Container.</p>
+<pre> $ docker container ls -a</code></pre>
 
-<p>5. Membuat Docker Container.</p>
-<pre class="wp-block-code"><code class="">$ docker container create --name mongodb1 mongo:4.0</code></pre>
+### 5. Membuat Docker Container.
+<pre> $ docker container create --name mongodb1 mongo:4.0</code></pre>
 
-<p>6. Start Container.</p>
-<pre class="wp-block-code"><code class="">$ docker container start mongodb1</code></pre>
+### 6. Start Container.
+<pre> $ docker container start mongodb1</code></pre>
 
-<p>7. Mencari Images.</p>
-<pre class="wp-block-code"><code class="">$ docker search mysql</code></pre>
+### 7. Mencari Images.
+<pre> $ docker search mysql</code></pre>
 
 <p>8. Stop Container.</p>
 <pre class="wp-block-code"><code class="">$ docker container stop mongodb1</code></pre>
