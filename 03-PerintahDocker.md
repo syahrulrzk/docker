@@ -1,4 +1,5 @@
-<p><img src="https://drive.google.com/uc?export=view&id=1B2skhoyxRxEG60l5DMdkfjHKOCBFRllZ"></p>
+<p align="center"><img src="https://drive.google.com/uc?export=view&id=1B2skhoyxRxEG60l5DMdkfjHKOCBFRllZ"></p>
+
 # Perintah Dasar dan Cara Pengunaan nya!
 <p>1. Melihat Images.</p>
 <pre class="wp-block-code"><code class="">$ docker images</code></pre>
