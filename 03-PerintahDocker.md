@@ -52,12 +52,14 @@ $ docker pull debian:9.8 (certain version)</code></pre>
 <p>Ketika dilihat pada running Container, maka Container tersebut langsung berjalan. </p>
 <p>Jadi perintah tersebut akan membuat container otomatis dari image <strong><em>mysql/mysql-server</em></strong>. Jika image <strong><em>mysql/mysql-server</em></strong> tidak ada di repository local, maka dia akan download image dari registry.</p>
 
-<pre> $ docker ps
+<pre> 
+$ docker ps
 atau 
 $ docker container ls</pre>
 
 ### 14. Membuat Volume
-<pre> $ docker volume create data1
+<pre> 
+$ docker volume create data1
 $ docker volume create data2 </pre>
 
 <p>Untuk melihat volume yang sudah dibuat pada docker, ketikkan perintah:</p>
@@ -78,37 +80,35 @@ $ docker volume create data2 </pre>
 
 ## Setup Container Mongo
 
-<p>1. Download image untuk mongo.</p>
-<pre class="wp-block-code"><code class="">$ docker pull mongo</code></pre>
+### 1. Download image untuk mongo.
+<pre> $ docker pull mongo </pre>
 
-<p>2. Periksa apakah image sudah ter-download.</p>
-<pre class="wp-block-code"><code class="">$ docker images</code></pre>
+### 2. Periksa apakah image sudah ter-download.</p>
+<pre> $ docker images</pre>
 
-<p>3. Buat kontainer untuk mongo.</p>
-<pre class="wp-block-code"><code class="">$ docker container create --name mongoserver1 -p 1000:27017 mongo</code></pre>
+### 3. Buat kontainer untuk mongo.
+<pre> $ docker container create --name mongoserver1 -p 1000:27017 mongo </pre>
 
-<p>4. Periksa apakah kontainer sudah terbuat.</p>
-<pre class="wp-block-code"><code class="">$ docker container ls -a</code></pre>
+### 4. Periksa apakah kontainer sudah terbuat.
+<pre> $ docker container ls -a </pre>
 
-<p>5. Jalankan kontainer mongo.</p>
-<pre class="wp-block-code"><code class="">$ docker container start mongoserver1</code></pre>
+### 5. Jalankan kontainer mongo.
+<pre> $ docker container start mongoserver1 </pre>
 
-<p>6. Periksa apakah kontainer mongo sudah jalan.</p>
-<pre class="wp-block-code"><code class="">$ docker container ls</code></pre>
+### 6. Periksa apakah kontainer mongo sudah jalan.
+<pre> $ docker container ls </pre>
 
-<p>7. Untuk masuk ke kontainer mongo dapat menggunakan perintah:</p>
-<pre class="wp-block-code"><code class="">$ docker exec -it mongoserver1 bash
+### 7. Untuk masuk ke kontainer mongo dapat menggunakan perintah:
+<pre> $ docker exec -it mongoserver1 bash
 $ mongo</code></pre>
 
-<p>8. Untuk mengakses mongo dari host:</p>
-<pre class="wp-block-code"><code class="">$ mongo --port 2000</code></pre>
-
-
+### 8. Untuk mengakses mongo dari host:
+<pre> $ mongo --port 2000</pre>
 
 
 ## Setup Container Mysql Server
 
-<p>1. Download image untuk mysql-server.</p>
+### 1. Download image untuk mysql-server.
 <pre class="wp-block-code"><code class="">$ docker pull mysql/mysql-server</code></pre>
 
 <p>2. Periksa apakah image sudah ter-download.</p>
