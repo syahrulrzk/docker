@@ -46,28 +46,29 @@ $ docker pull debian:9.8 (certain version)</code></pre>
 
 <p>walaupun Container tersebut sudah dibuat sebelumnya. Tetapi Image tersebut akan jalan ketika langsung dijalankan dari Image-nya, contohnya seperti <strong><em>mysql</em></strong> atau <strong><em>mysql/mysql-server</em></strong>. </p>
 
-<p>Jadi ada langkah tertentu untuk menjalankan Image tertentu. Seperti <strong><em>mysql/mysql-server</em></strong>, anda bisa melihat dokumentasi resminya. Container mysql dapat di jalankan dengan perintah<code>:</code></p>
+<p>Jadi ada langkah tertentu untuk menjalankan Image tertentu. Seperti <strong><em>mysql/mysql-server</em></strong>, anda bisa melihat dokumentasi resminya. Container mysql dapat di jalankan dengan perintah : </p>
 
-<pre class="wp-block-code"><code class="">$ docker run -itd --name mysqlserver1 -p 1234:3306 mysql/mysql-server</code></pre>
+<pre> $ docker run -itd --name mysqlserver1 -p 1234:3306 mysql/mysql-server </pre>
 <p>Ketika dilihat pada running Container, maka Container tersebut langsung berjalan. </p>
 <p>Jadi perintah tersebut akan membuat container otomatis dari image <strong><em>mysql/mysql-server</em></strong>. Jika image <strong><em>mysql/mysql-server</em></strong> tidak ada di repository local, maka dia akan download image dari registry.</p>
-<pre class="wp-block-code"><code class="">$ docker ps
 
+<pre> $ docker ps
 atau 
+$ docker container ls</pre>
 
-$ docker container ls</code></pre>
+### 14. Membuat Volume
+<pre> $ docker volume create data1
+$ docker volume create data2 </pre>
 
-<p>14. Membuat Volume</p>
-<pre class="wp-block-code"><code class="">$ docker volume create data1
-$ docker volume create data2</code></pre>
 <p>Untuk melihat volume yang sudah dibuat pada docker, ketikkan perintah:</p>
-<pre class="wp-block-code"><code class="">$ docker volume ls</code></pre>
+<pre> $ docker volume ls </pre>
 <p>Untuk membuat container dengan mencantumkan volume yang ada dapat menggunakan opsi <strong>-v</strong>.</p>
-<pre class="wp-block-code"><code class="">$ docker run -itd --name mysqlserver1 -v data1:/var/lib/mysql -p 1234:3306 mysql</code></pre>
+
+<pre> $ docker run -itd --name mysqlserver1 -v data1:/var/lib/mysql -p 1234:3306 mysql </pre>
 <p>Perintah tersebut akan me-mount volume <strong>data1</strong> ke direktori <strong>/var/lib/mysql/</strong> pada container <strong>mysqlserver1</strong>.</p>
 
-<p>15. Melakukan Commit Container</p>
-<pre class="wp-block-code"><code class="">$ docker commit container1 image1</code></pre>
+### 15. Melakukan Commit Container
+<pre> $ docker commit container1 image1 </pre>
 
 <p>Perintah tersebut akan membuat image dengan nama <strong>image1</strong> dari container yang sedang running yaitu <strong>container1</strong>. Jadi kondisi <strong>container1</strong> yang sekarang akan disimpan dalam <strong>image1</strong>.</p>
 
