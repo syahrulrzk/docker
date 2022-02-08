@@ -140,3 +140,4 @@ $ mongo</code></pre>
 
 ### 11. Untuk mengakses mysql-server dari host:
 <pre> $ mysql -h localhost -P 1234 --protocol=tcp -u root -p </pre>
+ 
