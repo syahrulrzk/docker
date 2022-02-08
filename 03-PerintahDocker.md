@@ -130,7 +130,7 @@ $ mongo</code></pre>
 <pre> $ mysql -u root -p (gunakan password yang di generate)</pre>
 
 ### 8. Ganti password mysql.
-<pre class="wp-block-code"><code class="">$ ALTER USER 'root'@'localhost' IDENTIFIED BY 'newpass';</code></pre>
+<pre> $ ALTER USER 'root'@'localhost' IDENTIFIED BY 'newpass';</pre>
 
 <p>9. Buat user baru mysql.</p>
 <pre class="wp-block-code"><code class="">$ CREATE USER 'newuser'@'%' IDENTIFIED BY 'newpass';</code></pre>
