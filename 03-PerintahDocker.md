@@ -2,7 +2,7 @@
 
 # Perintah Dasar dan Cara Pengunaan nya!
 ### 1. Melihat Images.
-<pre>$ docker images</code></pre>
+<pre>$ docker images</pre>
 
 ### 2. Download Images.
 <pre>$ docker pull debian (latest)
@@ -109,16 +109,16 @@ $ mongo</code></pre>
 ## Setup Container Mysql Server
 
 ### 1. Download image untuk mysql-server.
-<pre class="wp-block-code"><code class="">$ docker pull mysql/mysql-server</code></pre>
+<pre> $ docker pull mysql/mysql-server</pre>
 
-<p>2. Periksa apakah image sudah ter-download.</p>
-<pre class="wp-block-code"><code class="">$ docker images</code></pre>
+### 2. Periksa apakah image sudah ter-download.
+<pre>$ docker images</pre>
 
-<p>3. Buat kontainer untuk mysql-server dan langsung jalankan.</p>
-<pre class="wp-block-code"><code class="">$ docker run -d --name mysqlserver1 -p 5000:3306 mysql/mysql-server</code></pre>
+### 3. Buat kontainer untuk mysql-server dan langsung jalankan
+<pre> $ docker run -d --name mysqlserver1 -p 5000:3306 mysql/mysql-server </pre>
 
-<p>4. Periksa apakah kontainer sudah jalan.</p>
-<pre class="wp-block-code"><code class="">$ docker container ls</code></pre>
+### 4. Periksa apakah kontainer sudah jalan.
+<pre> $ docker container ls </pre>
 
 <p>5. Periksa log pada container mysql-server untuk melihat password yang di-generate.</p>
 <pre class="wp-block-code"><code class="">$ docker logs mysqlserver1 | grep GENERATED</code></pre>
