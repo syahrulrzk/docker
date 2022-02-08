@@ -30,10 +30,10 @@ $ docker pull debian:9.8 (certain version)</pre>
 <pre> $ docker container rm mongodb1</pre>
 
 ### 10. Membuat Container yang dapat diakses dari host. Dengan kata lain, membuka port pada Container sehingga service yang dijalankan dapat diakses dari luar.
-<pre> $ docker container create --name mongodb2 -p 1234:27017 mongo</code></pre>
+<pre> $ docker container create --name mongodb2 -p 1234:27017 mongo</pre>
 
 ### 11. Menjalankan Images secara langsung. Sehingga, container akan otomatis terbentuk dari Image tersebut.
-<pre class="wp-block-code"><code class="">$ docker run -itd mongo</code></pre>
+<pre class="wp-block-code"><code class="">$ docker run -itd mongo</pre>
 
 ### 12. Menjalankan Image secara langsung dan otomatis membuat container. 
 <p>Dan juga membuka port untuk container tersebut. Contohnya pada Image mysql/mysql-server</p>
