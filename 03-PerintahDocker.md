@@ -6,7 +6,7 @@
 
 ### 2. Download Images.
 <pre>$ docker pull debian (latest)
-$ docker pull debian:9.8 (certain version)</code></pre>
+$ docker pull debian:9.8 (certain version)</pre>
 
 ### 3. Melihat Docker Container yang sedang running.
 <pre> $ docker cotainer ls </pre>
@@ -15,7 +15,7 @@ $ docker pull debian:9.8 (certain version)</code></pre>
 <pre> $ docker container ls -a</pre>
 
 ### 5. Membuat Docker Container.
-<pre> $ docker container create --name mongodb1 mongo:4.0</code></pre>
+<pre> $ docker container create --name mongodb1 mongo:4.0</pre>
 
 ### 6. Start Container.
 <pre> $ docker container start mongodb1</code></pre>
