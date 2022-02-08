@@ -18,10 +18,10 @@ $ docker pull debian:9.8 (certain version)</pre>
 <pre> $ docker container create --name mongodb1 mongo:4.0</pre>
 
 ### 6. Start Container.
-<pre> $ docker container start mongodb1</code></pre>
+<pre> $ docker container start mongodb1</pre>
 
 ### 7. Mencari Images.
-<pre> $ docker search mysql</code></pre>
+<pre> $ docker search mysql</pre>
 
 ### 8. Stop Container.
 <pre> $ docker container stop mongodb1</pre>
@@ -33,11 +33,11 @@ $ docker pull debian:9.8 (certain version)</pre>
 <pre> $ docker container create --name mongodb2 -p 1234:27017 mongo</pre>
 
 ### 11. Menjalankan Images secara langsung. Sehingga, container akan otomatis terbentuk dari Image tersebut.
-<pre class="wp-block-code"><code class="">$ docker run -itd mongo</pre>
+<pre> $ docker run -itd mongo </pre>
 
 ### 12. Menjalankan Image secara langsung dan otomatis membuat container. 
 <p>Dan juga membuka port untuk container tersebut. Contohnya pada Image mysql/mysql-server</p>
-<pre> $ docker run -d --name mysqlserver1 -p 1234:3306 mysql/mysql-server</code></pre>
+<pre> $ docker run -d --name mysqlserver1 -p 1234:3306 mysql/mysql-server</pre>
 
 ## 13. Masuk ke dalam Container.
 <pre> $ docker exec -it mongodb2 bash</code></pre>
