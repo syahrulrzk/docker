@@ -123,11 +123,11 @@ $ mongo</code></pre>
 ### 5. Periksa log pada container mysql-server untuk melihat password yang di-generate.
 <pre> $ docker logs mysqlserver1 | grep GENERATED</pre>
 
-<p>6. Untuk masuk ke kontainer mysql dapat menggunakan perintah:</p>
-<pre class="wp-block-code"><code class="">$ docker exec -it mysqlserver1 bash</code></pre>
+### 6. Untuk masuk ke kontainer mysql dapat menggunakan perintah:
+<pre> $ docker exec -it mysqlserver1 bash </pre>
 
-<p>7. Masuk ke mysql.</p>
-<pre class="wp-block-code"><code class="">$ mysql -u root -p (gunakan password yang di generate)</code></pre>
+### 7. Masuk ke mysql.
+<pre> $ mysql -u root -p (gunakan password yang di generate)</pre>
 
 <p>8. Ganti password mysql.</p>
 <pre class="wp-block-code"><code class="">$ ALTER USER 'root'@'localhost' IDENTIFIED BY 'newpass';</code></pre>
