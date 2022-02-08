@@ -9,10 +9,10 @@
 $ docker pull debian:9.8 (certain version)</code></pre>
 
 ### 3. Melihat Docker Container yang sedang running.
-<pre class="wp-block-code"><code class="">$ docker cotainer ls</code></pre>
+<pre> $ docker cotainer ls </pre>
 
 ### 4. Melihat semua list Docker Container.</p>
-<pre> $ docker container ls -a</code></pre>
+<pre> $ docker container ls -a</pre>
 
 ### 5. Membuat Docker Container.
 <pre> $ docker container create --name mongodb1 mongo:4.0</code></pre>
