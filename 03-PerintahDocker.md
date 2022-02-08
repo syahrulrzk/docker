@@ -138,5 +138,5 @@ $ mongo</code></pre>
 ### 10. Berikan akses pada user agar dapat diakses dari luar atau host.
 <pre> GRANT ALL PRIVILEGES ON *.* TO 'newuser'@'%' WITH GRANT OPTION;</pre>
 
-<p>11. Untuk mengakses mysql-server dari host:</p>
-<pre class="wp-block-code"><code class="">$ mysql -h localhost -P 1234 --protocol=tcp -u root -p</code></pre>
+### 11. Untuk mengakses mysql-server dari host:
+<pre> $ mysql -h localhost -P 1234 --protocol=tcp -u root -p </pre>
