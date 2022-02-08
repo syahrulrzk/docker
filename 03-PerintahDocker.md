@@ -120,8 +120,8 @@ $ mongo</code></pre>
 ### 4. Periksa apakah kontainer sudah jalan.
 <pre> $ docker container ls </pre>
 
-<p>5. Periksa log pada container mysql-server untuk melihat password yang di-generate.</p>
-<pre class="wp-block-code"><code class="">$ docker logs mysqlserver1 | grep GENERATED</code></pre>
+### 5. Periksa log pada container mysql-server untuk melihat password yang di-generate.
+<pre> $ docker logs mysqlserver1 | grep GENERATED</pre>
 
 <p>6. Untuk masuk ke kontainer mysql dapat menggunakan perintah:</p>
 <pre class="wp-block-code"><code class="">$ docker exec -it mysqlserver1 bash</code></pre>
