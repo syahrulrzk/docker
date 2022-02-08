@@ -24,10 +24,10 @@ $ docker pull debian:9.8 (certain version)</code></pre>
 <pre> $ docker search mysql</code></pre>
 
 ### 8. Stop Container.
-<pre> $ docker container stop mongodb1</code></pre>
+<pre> $ docker container stop mongodb1</pre>
 
 ### 9. Menghapus Container.
-<pre> $ docker container rm mongodb1</code></pre>
+<pre> $ docker container rm mongodb1</pre>
 
 ### 10. Membuat Container yang dapat diakses dari host. Dengan kata lain, membuka port pada Container sehingga service yang dijalankan dapat diakses dari luar.
 <pre> $ docker container create --name mongodb2 -p 1234:27017 mongo</code></pre>
