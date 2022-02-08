@@ -132,8 +132,8 @@ $ mongo</code></pre>
 ### 8. Ganti password mysql.
 <pre> $ ALTER USER 'root'@'localhost' IDENTIFIED BY 'newpass';</pre>
 
-<p>9. Buat user baru mysql.</p>
-<pre class="wp-block-code"><code class="">$ CREATE USER 'newuser'@'%' IDENTIFIED BY 'newpass';</code></pre>
+### 9. Buat user baru mysql.
+<pre> $ CREATE USER 'newuser'@'%' IDENTIFIED BY 'newpass';</pre>
 
 <p>10. Berikan akses pada user agar dapat diakses dari luar atau host.</p>
 <pre class="wp-block-code"><code class="">GRANT ALL PRIVILEGES ON *.* TO 'newuser'@'%' WITH GRANT OPTION;</code></pre>
