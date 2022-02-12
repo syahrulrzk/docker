@@ -26,3 +26,11 @@ NETWORK ID     NAME      DRIVER    SCOPE
 547776771fe2   host      host      local
 a4d149a845ae   none      null      local
 </pre>
+
+## Default Brigde Network
+
+Membuat dua container dengan nama container node1 dan node2, image nginx:stable-alpine, dan tanpa mendefinisikan opsi network.
+<pre> 
+docker run -d --name node1 nginx:stable-alpine    
+docker run -d --name node2 nginx:stable-alpine    
+</pre>
