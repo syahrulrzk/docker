@@ -95,3 +95,19 @@ docker network inspect bridge
 },
 ...   
 </pre>
+
+Container yang menggunakan bridge network dapat dilihat informasinya pada bagian Containers. Terdapat dua container yaitu node1 dengan IP address 172.17.0.2 dan node2 dengan IP address 172.17.0.3.
+
+Uji ping dari container node1 ke node2.
+
+<pre>docker exec node1 ping 172.17.0.3</pre>
+
+Hasil perintah di atas.
+
+<pre>
+PING 172.17.0.3 (172.17.0.3): 56 data bytes
+64 bytes from 172.17.0.3: seq=0 ttl=64 time=0.119 ms
+64 bytes from 172.17.0.3: seq=1 ttl=64 time=0.134 ms
+64 bytes from 172.17.0.3: seq=2 ttl=64 time=0.107 ms
+</pre>
+
