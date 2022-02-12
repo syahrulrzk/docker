@@ -4,6 +4,7 @@ Secara default container menggunakan network driver tipe bridge dengan nama brid
 ## Network Driver
 <ul>
   <li>bridge: menghubungkan container yang memakai nama bridge yang sama</li>
+  <li>host: menghapus network isolation antara container dan Docker host, secara langsung menggunakan network milik host</li>
 
   
   
