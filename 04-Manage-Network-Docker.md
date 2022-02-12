@@ -170,15 +170,15 @@ Melepaskan container node1 dari network net-web.
 <pre>docker network disconnect net-web node1</pre>
 
 ## Perintah Docker Network
-
-Menampilakn semua network <pre>docker network ls</pre>
+<ul>
+<li>Menampilakn semua network</li> <pre>docker network ls</pre>
 Membuat Network <pre>docker network create nama-network</pre>
 Menghubungakan Container Ke Network <pre>docker network connect nama-network nama-container</pre>
 Melepaskan Container dari Network <pre>docker network disconnect nama-network nama-container</pre>
 Menampilakan Informasi Detail Network <pre>docker network inspect nama-network</pre>
 Menghapus Network<pre>docker network rm nama-network</pre>
 Menghapus Semua Network Yang tidak Di Pakai<pre>docker network prune</pre>
-
+</ul>
 
 
 
