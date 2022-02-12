@@ -111,3 +111,19 @@ PING 172.17.0.3 (172.17.0.3): 56 data bytes
 64 bytes from 172.17.0.3: seq=2 ttl=64 time=0.107 ms
 </pre>
 
+## Membuat Bridge Network
+
+Container yang menggunakan default bridge network tidak dapat secara otomatis berkomunikasi menggunakan hostname dari container, hanya dapat menggunakan IP address. Misalnya tidak bisa ping node2 hanya bisa ping 172.17.0.3.
+
+Untuk dapat berkomunikasi dengan menggunakan hostname, definisikan IP-host di file /etc/hosts container secara manual. Cara lainnya, container menggunakan bridge network yang dibuat sendiri (user-defined bridge).
+
+Membuat bridge network dengan nama net-web.
+<pre>docker network create net-web    </pre>
+
+
+
+
+
+
+
+
