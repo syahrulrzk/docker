@@ -17,3 +17,12 @@ Menampilkan network yang tersedia di Docker.
 <pre>
  docker network ls    
 </pre>
+
+Contoh hasil perintah di atas, menampilkan network default, belum ada network yang ditambahkan sendiri.
+
+<pre>
+NETWORK ID     NAME      DRIVER    SCOPE
+1652fc7934a6   bridge    bridge    local
+547776771fe2   host      host      local
+a4d149a845ae   none      null      local
+</pre>
