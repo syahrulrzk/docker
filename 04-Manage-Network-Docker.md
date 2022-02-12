@@ -10,3 +10,10 @@ Secara default container menggunakan network driver tipe bridge dengan nama brid
   <li>none: menonaktifkan semua network. Biasanya digunakan bersama dengan custom network driver</li>
   <li>Network plugins: menginstall dan menggunakan third-party network plugin yang tersedia di Docker Hub atau dari third-party vendor</li>
 </ul>
+
+## Bridge Network
+
+Menampilkan network yang tersedia di Docker.
+<pre>
+ docker network ls    
+</pre>
