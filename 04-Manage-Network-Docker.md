@@ -120,6 +120,78 @@ Untuk dapat berkomunikasi dengan menggunakan hostname, definisikan IP-host di fi
 Membuat bridge network dengan nama net-web.
 <pre>docker network create net-web    </pre>
 
+Menampilkan network.
+
+<pre>
+docker network ls
+
+NETWORK ID     NAME      DRIVER    SCOPE
+1652fc7934a6   bridge    bridge    local
+547776771fe2   host      host      local
+2aa8cf07ab2e   net-web   bridge    local
+a4d149a845ae   none      null      local
+</pre>
+
+### Membuat Container Dengan Opsi Network
+
+Pada saat membuat container dapat sekaligus menghubungkannya ke network.
+
+Membuat container dan menghubungkannya ke network dengan nama net-web.
+
+<pre>
+docker run -d --name node1 --network net-web nginx:stable-alpine
+docker run -d --name node2 --network net-web nginx:stable-alpine
+</pre>
+
+Uji ping dari container node1 ke node2.
+
+<pre>
+docker exec node1 ping node2
+
+PING node2 (172.19.0.3): 56 data bytes
+64 bytes from 172.19.0.3: seq=0 ttl=64 time=0.145 ms
+64 bytes from 172.19.0.3: seq=1 ttl=64 time=0.100 ms
+64 bytes from 172.19.0.3: seq=2 ttl=64 time=0.117 ms
+</pre>
+
+### Menghubungkan Container yang Sudah Ada
+
+Container yang sudah ada sebelumnya dapat dihubungkan ke network.
+
+Menghubungkan container node1 dan node2 ke network net-web.
+
+<pre>
+docker network connect net-web node1
+docker network connect net-web node2    
+</pre>
+
+Melepaskan container node1 dari network net-web.
+
+<pre>docker network disconnect net-web node1</pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
