@@ -11,4 +11,8 @@ Docker menyediakan perintah berikut untuk mengelola container :
 - PORT : Port yang diekspos oleh container atau port forward, jika dikonfigurasi.
 - NAMES : Nama Container
 
-Container yang dihentikan tidak langsung dibuang. Sistem file lokal mereka dan status lainnya dipertahankan sehingga dapat diperiksa untuk analisis post-mortem. Opsi -a mencantumkan semua container, termasuk Container yang belum dibuang:
+Container yang dihentikan tidak langsung dibuang. Sistem file lokal mereka dan status lainnya dipertahankan sehingga dapat diperiksa untuk analisis post-mortem. Opsi -a mencantumkan semua container, termasuk Container yang belum dibuang.
+
+- docker inspect : Perintah ini bertanggung jawab untuk mencantumkan metadata tentang container yang berjalan atau berhenti. Perintah menghasilkan keluaran JSON.
+
+
