@@ -6,3 +6,7 @@ Docker menyediakan perintah berikut untuk mengelola container :
 - Cointainer ID : Setiap container, saat dibuat mendapatkan ID container, yang berupa angka heksadesimal dan terlihat seperti ID gambar, tetapi sebenarnya tidak terkait.
 - IMAGE : Image Container yang digunakan untuk memulai container.
 - COMMAND : Perintah yang dijalankan saat container dimulai.
+- CREATED :
+- STATUS :
+- PORT :
+- NAMES :
