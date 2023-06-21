@@ -7,6 +7,6 @@ Docker menyediakan perintah berikut untuk mengelola container :
 - IMAGE : Image Container yang digunakan untuk memulai container.
 - COMMAND : Perintah yang dijalankan saat container dimulai.
 - CREATED : Tanggal dan waktu penampung dimulai.
-- STATUS :
+- STATUS : Total waktu aktif penampung, jika masih berjalan, atau waktu sejak dihentikan.
 - PORT :
 - NAMES :
