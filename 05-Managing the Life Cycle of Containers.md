@@ -8,5 +8,5 @@ Docker menyediakan perintah berikut untuk mengelola container :
 - COMMAND : Perintah yang dijalankan saat container dimulai.
 - CREATED : Tanggal dan waktu penampung dimulai.
 - STATUS : Total waktu aktif penampung, jika masih berjalan, atau waktu sejak dihentikan.
-- PORT :
-- NAMES :
+- PORT : Port yang diekspos oleh container atau port forward, jika dikonfigurasi.
+- NAMES : Nama Container
