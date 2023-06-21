@@ -10,3 +10,5 @@ Docker menyediakan perintah berikut untuk mengelola container :
 - STATUS : Total waktu aktif penampung, jika masih berjalan, atau waktu sejak dihentikan.
 - PORT : Port yang diekspos oleh container atau port forward, jika dikonfigurasi.
 - NAMES : Nama Container
+
+Container yang dihentikan tidak langsung dibuang. Sistem file lokal mereka dan status lainnya dipertahankan sehingga dapat diperiksa untuk analisis post-mortem. Opsi -a mencantumkan semua container, termasuk Container yang belum dibuang:
