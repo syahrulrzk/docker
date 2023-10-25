@@ -9,3 +9,12 @@ Saya akan memberikan sedikit gambaran bagaimana data dapat tersimpan di dalam co
 
 ### Membuat Volume pada Container
 Untuk membuat volume baru pada container dapat menggunakan perintah:
+<pre>
+  $ docker volume create nama-volume
+</pre>
+
+Untuk melihat volume-volume yang telah dibuat pada container:
+
+<pre>
+  $ docker volume ls
+</pre>
