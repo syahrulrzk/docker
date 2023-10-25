@@ -46,6 +46,7 @@ Kurang lebih caranya sama dengan cara di atas. Hanya saja path data yang digunak
   $ docker run -itd --name wordpress -v data-wp:/var/www/html -p 80:80 wordpress
 </pre>
 
+Data-data perubahan seperti tema, plugins dan lain-lain akan tetap tersimpan ketika nanti dibuat container baru. Untuk artikel akan tetap tersimpan pada database yaitu pada container terpisah untuk database. Untuk database sendiri sudah diberikan gambaran seperti penjelasan di atas.
 
 
 
