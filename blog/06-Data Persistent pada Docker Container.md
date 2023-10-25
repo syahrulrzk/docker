@@ -35,4 +35,17 @@ Kemudian buat container dari image mysql dengan menambahkan opsi <b>–volume</b
   $ docker run -itd --name database1 -v data-mysql:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=12345 -p 3306:3306 mysql 
 </pre>
 
+Jadi setiap perubahan data pada mysql akan tetap tersimpan. Jika kita membuat container baru dengan tetap menggunakan volume <b>data1</b>, maka container baru pun akan tetap memiliki data dari container lama.
+
+### Data Persistent pada WordPress
+
+Kurang lebih caranya sama dengan cara di atas. Hanya saja path data yang digunakan pada wordpress berbeda dengan mysql, yaitu <b>/var/www/html/</b>.
+
+<pre>
+  $ docker volume create data-wp
+  $ docker run -itd --name wordpress -v data-wp:/var/www/html -p 80:80 wordpress
+</pre>
+
+
+
 
