@@ -25,4 +25,14 @@ Volume-volume yang dibuat akan tersimpan pada <b>/var/lib/docker/volumes/</b> pa
 
 MySQL akan menyimpan database nya pada <b>/var/lib/mysql/</b>. Jadi kita hanya perlu membuat volume baru dan melakukan mounting ke path tersebut.
 
+<pre>
+  $ docker volume create data-mysql
+</pre>
+
+Kemudian buat container dari image mysql dengan menambahkan opsi <b>–volume</b> atau <b>-v</b>.
+
+<pre>
+  $ docker run -itd --name database1 -v data-mysql:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=12345 -p 3306:3306 mysql 
+</pre>
+
 
