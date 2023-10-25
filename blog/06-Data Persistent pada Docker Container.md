@@ -1,1 +1,2 @@
 # Data Persistent pada Docker Container
+Seperti yang kita ketahui bahwa docker container bersifat sementara. Jadi ketika container dihapus, maka semua data atau perubahan yang telah terjadi akan ikut terhapus. Misalkan kita menjalankan container mysql dan kita memasukkan banyak data di dalamnya. Maka ketika container tersebut dihapus, maka data-data tersebut akan ikut hilang kecuali kita melakukan konfigurasi volume pada container tersebut.
