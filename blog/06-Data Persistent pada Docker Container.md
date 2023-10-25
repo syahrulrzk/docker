@@ -6,3 +6,6 @@ Jika kita sudah melakukan konfigurasi volume pada docker, maka ketika kita membu
 Beda cerita jika kita melakukan perubahan pada sistem linux di dalam container. Misalkan pada container mysql, kita menambahkan user pada sistem linux nya (<b>$ adduser userbaru</b>) maka user tersebut akan tetap ada ketika kita melakukan commit pada container tersebut.
 
 Saya akan memberikan sedikit gambaran bagaimana data dapat tersimpan di dalam container.
+
+### Membuat Volume pada Container
+Untuk membuat volume baru pada container dapat menggunakan perintah:
