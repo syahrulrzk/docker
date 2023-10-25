@@ -18,3 +18,7 @@ Untuk melihat volume-volume yang telah dibuat pada container:
 <pre>
   $ docker volume ls
 </pre>
+
+Volume-volume yang dibuat akan tersimpan pada /var/lib/docker/volumes/ pada host atau server. Jika kita ingin memindahkan atau menyalin data pada volume tertentu, silahkan merujuk pada path tersebut dan cari direktori denga nama volume yang dimaksud. Maka kita dapat memindahkan data keluar dari sebuah container.
+
+### Data Persistent pada MySQL
