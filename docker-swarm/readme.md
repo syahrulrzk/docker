@@ -17,3 +17,25 @@ Docker Swarm adalah fitur clustering dan orchestration bawaan dari Docker yang m
 4. Stacks
     - Kumpulan layanan yang saling terkait dan didefinisikan dalam file `docker-compose.yml`.
     - Digunakan untuk mendeploy aplikasi lengkap dengan dependensinya.
+
+
+## 🚀 Cara Kerja Docker Swarm
+
+1. Inisialisasi kluster Swarm:
+```shell
+docker swarm init
+```
+Ini akan membuat satu manager node.
+
+2. Menambahkan worker nodes:
+```shell
+docker swarm join --token <token> <manager-ip>:<port>
+```
+
+3. Membuat service:
+```shell
+docker service create --replicas 3 -p 80:80 nginx
+```
+Ini akan membuat 3 replika kontainer Nginx yang tersebar di node-node dalam kluster.
+
+4. Mengelola service:
