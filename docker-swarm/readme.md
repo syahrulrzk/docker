@@ -3,42 +3,47 @@ Docker Swarm adalah fitur clustering dan orchestration bawaan dari Docker yang m
 
 ## 🔧 Komponen Utama Docker Swarm
 
-1. Nodes (Node)
+### 1. Nodes (Node)
+
     - Manager Node : Bertugas mengelola kluster, menjadwalkan tugas, dan menyimpan status kluster.
     - Worker Node : Menjalankan layanan (services) atau kontainer sesuai instruksi dari manager node.
 
-3. Services
+### 3. Services
+
     - Merupakan definisi tentang bagaimana kontainer harus dijalankan di dalam kluster.
     - Contoh: "Saya ingin 3 replika dari kontainer web saya selalu berjalan."
 
-3. Tasks
+### 3. Tasks
+
     - Setiap unit kerja yang diberikan ke worker node untuk menjalankan kontainer sesuai spesifikasi service.
 
-4. Stacks
+### 4. Stacks
+
     - Kumpulan layanan yang saling terkait dan didefinisikan dalam file `docker-compose.yml`.
     - Digunakan untuk mendeploy aplikasi lengkap dengan dependensinya.
 
 
 ## 🚀 Cara Kerja Docker Swarm
 
-1. Inisialisasi kluster Swarm:
+### 1. Inisialisasi kluster Swarm:
+   
 ```shell
 docker swarm init
 ```
 Ini akan membuat satu manager node.
 
-2. Menambahkan worker nodes:
+### 2. Menambahkan worker nodes:
 ```shell
 docker swarm join --token <token> <manager-ip>:<port>
 ```
 
-3. Membuat service:
+### 3. Membuat service:
 ```shell
 docker service create --replicas 3 -p 80:80 nginx
 ```
 Ini akan membuat 3 replika kontainer Nginx yang tersebar di node-node dalam kluster.
 
-4. Mengelola service:
+### 4. Mengelola service:
 - Lihat daftar service :
 ```shell
 docker service ls
