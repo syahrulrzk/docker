@@ -78,6 +78,13 @@ verify: Service 5d1t6yp6y2y4zbmncw5hj8mnt converged
 ID             NAME      MODE         REPLICAS   IMAGE          PORTS
 5d1t6yp6y2y4   web       replicated   3/3        nginx:latest   *:80->80/tcp
 ╭────[ reborn@linux ] [~] 
+╰────[ ~ docker service ps web
+ID             NAME      IMAGE          NODE      DESIRED STATE   CURRENT STATE           ERROR     PORTS
+w40qt6743rrp   web.1     nginx:latest   ubuntu    Running         Running 6 minutes ago             
+g8t5kfg87asz   web.2     nginx:latest   DietPi    Running         Running 5 minutes ago             
+04a9kgel31t5   web.3     nginx:latest   DietPi    Running         Running 5 minutes ago             
+╭────[ reborn@linux ] [~] 
 ╰────[ ~ 
+
 ```
 
