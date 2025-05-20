@@ -39,3 +39,12 @@ docker service create --replicas 3 -p 80:80 nginx
 Ini akan membuat 3 replika kontainer Nginx yang tersebar di node-node dalam kluster.
 
 4. Mengelola service:
+- Lihat daftar service :
+```shell
+docker service ls
+```
+
+- Update jumlah replika
+```shell
+docker service scale <service-name>=5
+```
